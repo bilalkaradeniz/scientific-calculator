@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+
+        <div class="top-bar">
+            <h2>CalcX</h2>
+            <button id="modeToggle">Normal</button>
+            <button id="themeToggle">🌙</button>
+        </div>
+
+        <input type="text" id="display" readonly>
+
+        <!-- Bilimsel Butonlar -->
+        <div class="scientific hidden">
+            <button>sin</button>
+            <button>cos</button>
+            <button>tan</button>
+            <button>√</button>
+            <button>x²</button>
+            <button>log</button>
+            <button>π</button>
+            <button>( )</button>
+            <button>M+</button>
+            <button>MR</button>
+            <button>MC</button>
+        </div>
+
+        <!-- Normal Butonlar -->
+        <div class="buttons">
+
+            <button>C</button>
+            <button>⌫</button>
+            <button>%</button>
+            <button>/</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+
+        </div>
+
+        <div class="history-panel">
+            <h3>Geçmiş</h3>
+            <ul id="historyList"></ul>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
